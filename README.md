@@ -6,4 +6,3 @@ My CV in Latex
 
 My CV created with $\LaTeX$. Download the [CV](https://raw.githubusercontent.com/kawaMANMI/CV.tex/main/main.pdf) or run `make` to compile it.
 
-<!-- https://github.com/kawaMANMI/CV.tex/blob/main/main.pdf -->
