@@ -1,0 +1,426 @@
+% LaTeX resume using res.cls
+\documentclass[line]{res}
+\usepackage{lmodern}
+\usepackage[T1]{fontenc}
+\usepackage{xcolor}
+\usepackage{romannum}
+\usepackage{fancyhdr}
+\usepackage{etaremune}
+\usepackage{refcount}
+\usepackage[left=0.75in, right=1.25in,top=0.75in,bottom=0.75in]{geometry}
+\usepackage{array}
+\usepackage{amssymb}
+\usepackage{fancyhdr}
+\usepackage{changepage}
+\usepackage{longtable}
+\usepackage{graphicx}
+\usepackage{bibentry}
+\usepackage{natbib}
+
+\usepackage[resetlabels]{multibib}
+% \usepackage[backend=biber]{biblatex}
+% \addbibresource{main.bib}
+
+\usepackage{hyperref}
+\hypersetup{
+	unicode=true,
+	pdftitle={CV Bernat Font},
+	pdfauthor={Bernat Font},
+	pdfnewwindow=true,
+	colorlinks=true, 	% (false,true)
+	pdfborder={0 0 0},
+	linkcolor=blue,
+	linktoc=all, 		% (none,all)
+	citecolor=blue,
+	urlcolor=blue,
+	breaklinks=false,
+}
+\pagestyle{empty}  % No page numbers/headers/footers
+
+\fancyhf{} % clear all header and footer fields
+\renewcommand{\headrulewidth}{0pt} % no line in header area
+\fancyfoot[L]{\hspace{-39pt} \footnotesize Last updated: \today}
+%\fancyfoot[C]{\footnotesize \thepage}
+\fancyfoot[R]{\footnotesize \thepage}
+
+\pagestyle{fancy}
+
+\newenvironment{p1}
+{\begin{adjustwidth}{-30pt}{0pt}
+\vspace{8pt}}
+{\end{adjustwidth}}
+
+\newenvironment{p11}
+{\begin{adjustwidth}{-25pt}{0pt}
+\vspace{8pt}}
+{\end{adjustwidth}}
+
+\newenvironment{p2}
+{\begin{adjustwidth}{-30pt}{0pt}
+\vspace{10pt}}
+{\end{adjustwidth}}
+
+\newcommand\sbullet[1][.5]{\mathbin{\vcenter{\hbox{\scalebox{#1}{$\bullet$}}}}}
+% \renewcommand{\labelitemi}{$\square$}
+\renewcommand{\labelitemi}{$\sbullet[.75]$}
+% \newcommand{\tabitem}{$\square$~~}
+\newcommand{\tabitem}{$\sbullet[.75]$~~}
+\renewcommand{\arraystretch}{1.25}
+
+\begin{document}
+\pagenumbering{arabic}
+\nobibliography{main}
+\bibliographystyle{apalike-refs}
+
+\name{\Large Dr. Kawa Manmi}
+
+\begin{resume}
+\section{}
+\vspace{-15pt}
+\hspace*{-36pt}{\href{mailto:kawa.manmi@warwick.ac.uk}{\texttt{kawa.manmi@warwick.ac.uk}}\hfill\href{mailto:Mywebsite}{\texttt{Visit my Website}}}\\
+\hspace*{0pt}\hfill\,\,\href{https://github.com/kawaMANMI}{\texttt{github.com/KawaManmi}}\\
+\vspace{-25pt}
+\noindent
+
+\section{Research interests}
+\begin{p11}
+physics-based battery models, modelling bubble dynamics; boundary integral method, numerical methods; computational fluid dynamics.
+\end{p11}
+
+
+\section{Experience}
+
+\begin{p1}
+\begin{tabular}{p{\dimexpr 0.89\linewidth-2\tabcolsep} >{\raggedleft\arraybackslash}p{\dimexpr 0.11\linewidth-\tabcolsep}}
+	\textbf{Resaerch Fellow}, Mathematics Institute, University of Warwick, UK. & 2023--2024\\
+	\textit{Focus}: physics-based Li-ion battery modelling:
+	\begin{itemize}
+		\item Joined Multiscale Modelling team at Faraday Institution to work on physics-based Li-ion battery modelling.
+		\item Alongside core research activities, provided teaching support and marking for undergraduate courses.
+	\end{itemize}
+\end{tabular}
+
+\vspace{5pt}
+\begin{tabular}{p{\dimexpr 0.89\linewidth-2\tabcolsep} >{\raggedleft\arraybackslash}p{\dimexpr 0.11\linewidth-\tabcolsep}}
+	\textbf{Computing Tutor}, De Montfort University International College (DMUIC). & 2022--2023\\
+	\textit{Focus}: teaching and assessing Visual Web Development (C\#, HTML, JavaScript) and  networking.
+\end{tabular}
+
+
+
+\vspace{5pt}
+\begin{tabular}{p{\dimexpr 0.89\linewidth-2\tabcolsep} >{\raggedleft\arraybackslash}p{\dimexpr 0.11\linewidth-\tabcolsep}}
+	\textbf{Lecturer}, Mathematics Department, College of Science, Salahaddin University-Erbil, IRAQ.  Concurrently served as a part-time Lecturer in the IT Department, Tishk International University, Erbil, Iraq& 2019--2020 \\
+	\textit{Responsibilities included}:
+	\begin{itemize}
+		\item Teaching courses in Multivariable Calculus, Introduction to Probability, Discrete Mathematics, and Numerical Methods.
+		\item Participating as a member of the scientific committee for undergraduate and postgraduate studies.
+		\item Supervising post-graduate students.	
+	\end{itemize}
+\end{tabular}
+
+\vspace{5pt}
+\begin{tabular}{p{\dimexpr 0.89\linewidth-2\tabcolsep} >{\raggedleft\arraybackslash}p{\dimexpr 0.11\linewidth-\tabcolsep}}
+	\textbf{Research Fellow}, School of Mathematics, University of Birmingham, UK. & 2018--2019 \\
+	\textit{Engaged in the research project "Maximizing cavitation to clean dental implants" funded by an EPSRC grant. Key contributions included}:
+	\begin{itemize}
+		\item Developing numerical models for cavitation and single bubble dynamics using Finite Volume Method (FVM) and Finite Element Method (FEM).
+		\item Authoring research papers.
+		\item Actively participating in scientific events such as workshops, conferences, seminars, weekly research group meetings, and training courses.
+\end{itemize}
+	\end{tabular}
+
+
+
+\vspace{5pt}
+\begin{tabular}{p{\dimexpr 0.89\linewidth-2\tabcolsep} >{\raggedleft\arraybackslash}p{\dimexpr 0.11\linewidth-\tabcolsep}}
+	\textbf{Lecturer}, Mathematics Department, College of Science, Salahaddin University-Erbil, IRAQ.  Concurrently served as a part-time Lecturer in the IT Department, Lebanse French University, Erbil, Iraq& 2015--2018 \\
+	\textit{Responsibilities included}:
+	\begin{itemize}
+		\item Teaching courses in Calculus I and II, and Computational Mathematics using Matlab
+		\item Administration duties include being head of the department and a member of exam board.
+		\item Academic activities, including writing research paper.	
+	\end{itemize}
+\end{tabular}
+
+\vspace{5pt}
+\begin{tabular}{p{\dimexpr 0.89\linewidth-2\tabcolsep} >{\raggedleft\arraybackslash}p{\dimexpr 0.11\linewidth-\tabcolsep}}
+	\textbf{Lecturer (MSc)}, Mathematics Department, College of Science, Salahaddin University-Erbil, IRAQ.  & 2007--2011 \\
+	\textit{Responsibilities included}:
+	\begin{itemize}
+		\item Teaching courses in Introduction to Numerical Analysis, Introduction to Visual Basic and Linear Programming.
+		\item Administration duties include being coordinator of the department, in charge of lecture timetable and member of exam board.
+	\end{itemize}
+\end{tabular}
+\end{p1}
+
+
+
+\section{Education}
+
+\begin{p1}
+\begin{tabular}{p{\dimexpr 0.89\linewidth-2\tabcolsep} >{\raggedleft\arraybackslash}p{\dimexpr 0.11\linewidth-\tabcolsep}}
+	\textbf{Ph.D.} Applied Mathematics, School of Mathematics, University of Birmingham,UK & 2011--2015 \\
+	\textit{Thesis}: Three Dimensional Acoustic Microbubble Dynamics Near Rigid Boundary. (\href{https://etheses.bham.ac.uk/id/eprint/5749/}{\texttt{eprint}}) & \\
+	\textit{Supervisors}: Dr. Qianxi Wang & \\
+\end{tabular}
+
+\vspace{5pt}
+\begin{tabular}{p{\dimexpr 0.89\linewidth-2\tabcolsep} >{\raggedleft\arraybackslash}p{\dimexpr 0.11\linewidth-\tabcolsep}}
+	\textbf{M.Sc.} Numerical analysis, Mathematics Department, College of Science, Salahaddin University-Erbil, IRAQ &  2005--2007\\
+\end{tabular} \\
+
+\vspace{5pt}
+\begin{tabular}{p{\dimexpr 0.89\linewidth-2\tabcolsep} >{\raggedleft\arraybackslash}p{\dimexpr 0.11\linewidth-\tabcolsep}}
+	\textbf{B.Sc.} Mathematics, Mathematics Department, College of Science, Salahaddin University-Erbil, IRAQ &  1999--2003\\
+\end{tabular} \\
+\end{p1}
+
+\section{Training Course}
+\begin{p1}
+\begin{itemize}
+	\item \textbf{Design of Experiments} at WMG, University of Warwick 29 Feb 2024
+	\item \textbf{APP PGR Academic and Professional Pathway for Postgraduate Researchers who Teach}, 7th Nov 2023 – 21st Feb 2024, University of Warwick.
+	\item \textbf{Faraday THRIVE Program}, “Skill 4 Thrive Program”, Oct 2023 - Feb 2024.
+	\item \textbf{CISM} Advanced Course “Batteries - Basic Principles, Experimental Investigations, and Modeling Across Scales", Udine, Italy, 25-29 Sep, 2023.
+	\item \textbf{Introduction Course for New Lecturers in the Mathematical Sciences}, IMA Isaac Newton Institute for Mathematical Sciences, Cambridge, UK (18 - 19 Sep 2023)
+	\item \textbf{PyBaMM workshop}, University of Warwick, UK (14 - 15 Sep 2023)
+	\item \textbf{Midlands Fluid Mechanics Meeting}, Aston University, UK (5 Sep  2023)
+	\item \textbf{Software Development Course}, Code Your Future (Jun 2022 - Mar 2023)
+	Acquired proficiency in HTML, CSS, JavaScript, NodeJS, React, Express, and Postgres.
+	\begin{itemize}
+		\item Learnt Agile methodologies and personal development.
+		\item Completed a 5-week full stack final project using Agile methodology.
+		\item Monthly performance evaluations (known as "Beyond Milestone" reports) are conducted and based on metrics such as Codewars rank, codility assessment, number of Github pulls, and attendance.
+	\end{itemize}
+	
+	\item \textbf{Web Development Bootcamp}, Bath Spa University, (Jun - Aug 2022).
+	\begin{itemize}
+		\item 	Learnt semantic HTML, responsive web design, CSS animation, flex/grid layout, JavaScript, and React.
+		\item Learnt Vanilla JavaScript, small projects including a simple calculator, a Hangman game, and Rock-paper-scissors game.
+	\end{itemize}
+	
+	\item \textbf{Data Science Bootcamp}, TechTalent Academy, (Feb 2022 - Jun 2022)
+	\begin{itemize}
+		\item Completed an intensive 14-week course on data science fundamentals.
+		\item Developed strong skills in data manipulation using Numpy and Pandas.
+		\item Learnt to visualize data using Python libraries such as Matplotlib and Altair.
+		\item Completed all weekly home learning tasks, submitted via GitHub.
+		\item Received a BCS Foundation Award in ‘What is Machine Learning? V1.0.
+	\end{itemize}
+	\item \textbf{Analysing Data Bootcamp}, Babington (Dec 2021 - Feb 2022).
+	\begin{itemize}
+		\item Completed 135-hour programme focused on data literacy, data-driven software, Excel, PowerBI, data analysis, and presentation.
+		\item Completed a Ucertify course for Microsoft Excel 2019.
+	\end{itemize}
+	\item \textbf{Fundamentals in software Development}, Code Your Future four weeks, in May 2022
+	The course focused on personal development as well as an introduction about several tools around coding including how using Visual studio, link it to Github and how ship it to live.  
+	\item \textbf{Action Tutor} Online training session for volunteer tutoring in Action Tutor, 17 Mar 2022.
+	\item \textbf{Academic Consultancy}, One Day Workshop, University of Birmingham Enterprise Limited, 29 May 2019.
+	\item \textbf{Depp Learning}, the NVIDIA Deep Learning Institute (DLI) and Advanced Research Computing, University of Birmingham, Jan 16, 2019. 
+	\item \textbf{Software Carpentry-Python}, the workshop focused on Python and the curriculum will include: The Unix Shell, Version Control with Git, and Programming with Python,27 - 28 Dec 2018, University of Birmingham, UK,  
+	\item 	\textbf{Online OpenMP Course},  four sessions on consecutive Wednesday starting on 24th October with the last session on 14 Nov 2018, by Mark Bull in EPCC.
+	\item \textbf{Continual Professional Development}: Meshing Methods for Computational Fluid Dynamics, 24 - 26 July, 2018, University of Central Lancashire, Preston, UK. 
+\end{itemize}
+\end{p1}
+
+
+\section{Publications}
+
+\begin{p1}
+\textbf{Peer-reviewed journal articles}
+\begin{etaremune}
+    \item \bibentry{AGHA2024117401}
+    \item \bibentry{jund2024extended}
+    \item \bibentry{bapir2024oscillation}
+    \item \bibentry{dadvand2023three}
+    \item \bibentry{manmi2021three}
+    \item \bibentry{manmi2020numerical}
+    \item \bibentry{vyas2020does}
+    \item \bibentry{aziz2019modeling}
+    \item \bibentry{vyas2019parameters}
+    \item \bibentry{manmi2017acoustic}
+    \item \bibentry{wang2015numerical}
+    \item \bibentry{wang2014microbubble}
+    \item \bibentry{wang2015cell}
+    \item \bibentry{saeed2008iterative}
+\end{etaremune}
+\end{p1}
+
+
+
+\section{Scientific Meeting}
+\begin{p1}
+	\begin{etaremune}
+		\item ModVal 2024, the 20th Symposium on Modeling and Validation of Electrochemical Energy Technologies, 13-14 March 2024 in Baden, Switzerland (Poster)
+		\item Faraday Institution Conference, University of Birmingham, Birmingham, UK, 11-13 September 2023.
+		\item PERCAT Postdoctoral Researcher Conference (EPS & LES) University of Birmingham, UK, 26 June 2019 (Poster).
+		\item Workshop on Cavitation Exploitation in Ljubljana, Slovenia 27-28 September 2018. Presentation entitled Numerical Investigation of Acoustic Cavitation as a Novel Method of Dental Plaque Removal 
+		\item 1st International Conference on Information Technology (ICoIT17), 2017. Presentation entitled New Weights in Laplacian Smoothing on Triangular Mesh.
+		\item First Swedish-Kurdish Workshop on Educational Aspects of Applied and Industrial Mathematics (October 2015) University of Zakho/ Duhok, Kurdistan Region-Iraq. Presentation entitled (3D Microbubble Dynamics Near a Wall Subject to High Intensity Ultrasound Using BIM) 
+		\item The Murfy International Scientific Meeting, Amazing (cavitation) bubbles: great potentials and challenges (nov. 2014), Kavli Royal Society Centre, Buckinghamshire, UK
+		\item Meeting to celebrate the career of Professor John Blake (Sep, 2013) Mathematical challenges in bubbles and biological fluid mechanics School of Mathematics, University of Birmingham, UK.
+		\item 4th annual BEAR PGR Conference on Research Computing (2013) University of Birmingham, UK.
+	\end{etaremune}
+	\end{p1}
+
+
+	\section{Invited Talks/Webinars}
+	\begin{p1}
+		\begin{etaremune}
+			\item Salahddin University-Erbil, Iraq, March 2024. Math Meets Batteries: An Overview of Physics-Based Modeling.
+			\item Mathematics Forever Organization, Kurdistan Region, Iraq, Mrach 2024. An Overview of Mathematical Modelling: Fluid Dynamics as an Example
+			
+		\end{etaremune}
+	\end{p1}
+
+	\section{References are available upon request}
+% \textbf{Peer-reviewed symposium proceedings}
+% \begin{etaremune}
+%     \item \bibentry{Radhakrishnan2021}
+%     \item \bibentry{Font2020a}
+% \end{etaremune}
+
+% \textbf{Conference proceedings}
+% \begin{etaremune}
+%     \item \bibentry{Suarez2023a}
+%     \item \bibentry{Font2017}
+% \end{etaremune}
+
+% \textbf{Conference abstracts}
+% \begin{etaremune}
+%     \item \bibentry{Cabral2023APS}
+%     \item \bibentry{Alcantara-Avila2023APS}
+%     \item \bibentry{Weymouth2023APS}
+%     \item \bibentry{Weymouth2023ParCFD}
+%     \item \bibentry{Font2023SFMC}
+%     \item \bibentry{Alcantara-Avila2023ETC}
+%     \item \bibentry{Suarez2023M2P}
+%     \item \bibentry{Font2022HiFiLED}
+%     \item \bibentry{Font2022ECCOMAS}
+%     \item \bibentry{Font2019APS}
+%     \item \bibentry{Font2019ETC}
+%     \item \bibentry{Font2016UKFLUIDS}
+% \end{etaremune}
+
+% \section{Invited Talks}
+% \begin{etaremune}
+%     \item \bibentry{talk10}
+%     \item \bibentry{talk9}
+%     \item \bibentry{talk8}
+%     \item \bibentry{talk7}
+%     \item \bibentry{talk6}
+%     \item \bibentry{talk5}
+%     \item \bibentry{talk4}
+%     \item \bibentry{talk3}
+%     \item \bibentry{talk2}
+%     \item \bibentry{talk1}
+% \end{etaremune}
+% \end{p1}
+
+% \section{Student supervision}\vspace{0.5cm}
+% \begin{p11}
+% Mentored and supervised students at different stages of their educational program such as Undergraduate students, MSc students, and most recently a PhD student.
+% As a mentor, the goal is to motivate students to pursue an interesting scientific topic while providing guidance throughout the process of learning and achieving.
+% The supervision involves regular meetings to assess their progress, and answering technical questions when needed. \\
+% \end{p11}
+
+% \vspace{-15pt}
+% \begin{p11}
+% \textbf{PhD students}
+
+% \vspace{5pt}
+% \begin{tabular}{p{\dimexpr 0.89\linewidth-2\tabcolsep} >{\raggedleft\arraybackslash}p{\dimexpr 0.11\linewidth-\tabcolsep}}
+% 	\tabitem Physics-based machine learning of marine hydrodynamics, TU Delft & 2023--\\
+% \end{tabular}\\
+
+% \vspace{-5pt}
+% \textbf{MSc projects}
+
+% \vspace{5pt}
+% \begin{tabular}{p{\dimexpr 0.89\linewidth-2\tabcolsep} >{\raggedleft\arraybackslash}p{\dimexpr 0.11\linewidth-\tabcolsep}}
+% 	\tabitem Machine learning wall model for bluff bodies forces calculation, University of Southampton & 2019 \\
+% 	\tabitem Accurate flow interpolation using optimal transport theory, University of Southampton & 2018 \\
+% \end{tabular}\\
+
+% \textbf{Undergraduate projects}
+
+% \vspace{5pt}
+% \begin{tabular}{p{\dimexpr 0.89\linewidth-2\tabcolsep} >{\raggedleft\arraybackslash}p{\dimexpr 0.11\linewidth-\tabcolsep}}
+% 	\tabitem Discovering new scaling laws in turbulent boundary layers via multi-expression programming, Universitat Polit\`{e}cnica de Catalunya (\href{http://hdl.handle.net/2117/372288}{\texttt{url}}) & 2021 \\
+% 	\tabitem Discovering new expressions for the vortex trajectories and velocity profiles of synthetic jets, Universitat Polit\`{e}cnica de Catalunya (\href{http://hdl.handle.net/2117/365135}{\texttt{url}}) & 2021 \\
+% \end{tabular} \\
+% \end{p11}
+
+% \section{Teaching}
+% \begin{p11}
+% Served as demonstrator and marker of multiple modules during my PhD.
+% Tasks involved preparing and delivering the laboratory sessions which included a theory part and an experimental part.
+% Additionally, served as lecturer of the BSC summer school on AI and HPC delivering a lecture on AI for CFD. \\
+
+% \begin{tabular}{p{\dimexpr 0.89\linewidth-2\tabcolsep} >{\raggedleft\arraybackslash}p{\dimexpr 0.11\linewidth-\tabcolsep}}
+% 	Lecturer at the PUMPS+AI Summer School, Barcelona Supercomputing Center & 2022 \\
+% \end{tabular}
+% \begin{itemize}
+% 	\item Machine learning for computational fluid dynamics (\href{https://pumps.bsc.es/2022/}{\texttt{url}})
+% \end{itemize}
+
+% \begin{tabular}{p{\dimexpr 0.89\linewidth-2\tabcolsep} >{\raggedleft\arraybackslash}p{\dimexpr 0.11\linewidth-\tabcolsep}}
+% 	Demonstrator, University of Southampton & 2015--2017 \\
+% \end{tabular}
+% \begin{itemize}
+% 	\item Aerodynamics: Nozzle lab
+% 	\item Propulsion: Ramjet, turbojet and rocket engine labs
+% 	\item Aerothermodynamics: Marking of lab reports
+% \end{itemize}
+% \end{p11}
+
+% \section{Software}
+% \begin{p11}
+% \textbf{Programming languages}: Fortran (including MPI), Julia, Python (including PyTorch, Keras, and Tensorflow), C, Java, Matlab.
+
+% \vspace{4pt}
+% \textbf{Tools}: Git, \LaTeX, Inkscape, Paraview.
+
+% \vspace{4pt}
+% \textbf{Selection of popular repositories}:
+% \begin{itemize}
+% 	\item \bibentry{Weymouth2023WaterLily}
+% 	\item \bibentry{Font2020SANSpy}
+% 	\item \bibentry{Font2019f2py}
+% 	\item \bibentry{Font2018nuatsbot}
+% 	\item \bibentry{Font2016PostProc}
+% \end{itemize}
+% \end{p11}
+
+% \section{Open science statement}
+% \begin{p11}\setlength{\parskip}{3pt}
+% I advocate for open science.
+% Most of my papers have an e-print version that can be downloaded for free either on \href{https://arxiv.org/search/physics?searchtype=author&query=Font%2C+B}{arXiv} or \href{https://b-fg.github.io/}{my website.}
+% The codes I write are also open-source, and you can find them in my \href{https://github.com/b-fg}{Github repository}.
+% \end{p11}
+
+% \section{References}\vspace{0.2cm}
+% \begin{p11}\setlength{\parskip}{1em}
+% Gabriel D. Weymouth, Professor of Ship Hydromechanics.\\
+% TU Delft, Netherlands.\\
+% Relation: PhD supervisor.\\
+% \href{mailto:g.d.weymouth@tudelft.nl}{\texttt{g.d.weymouth@tudelft.nl}}
+
+% Oriol Lehmkuhl, Leading Researcher of the Large-scale CFD group.\\
+% Barcelona Supercomputing Center, Spain.\\
+% Relation: Current research group principal investigator.\\
+% \href{mailto:oriol.lehmkuhl@bsc.es}{\texttt{oriol.lehmkuhl@bsc.es}}
+% \end{p11}
+% \section{Professional Societies}
+% \section{Awards \& Honors}
+% \section{Relevant Skills}
+\end{resume}
+\end{document}
+
+
+
+
+
+
+
