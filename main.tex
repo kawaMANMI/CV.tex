@@ -5,7 +5,7 @@
 \usepackage{xcolor}
 \usepackage{romannum}
 \usepackage{fancyhdr}
-\usepackage{etaremune}
+\usepackage{enumerate}
 \usepackage{refcount}
 \usepackage[left=0.75in, right=1.25in,top=0.75in,bottom=0.75in]{geometry}
 \usepackage{array}
@@ -60,9 +60,9 @@
 \vspace{10pt}}
 {\end{adjustwidth}}
 
-\newcommand\sbullet[1][.5]{\mathbin{\vcenter{\hbox{\scalebox{#1}{$\bullet$}}}}}
+% \newcommand\sbullet[1][.5]{\mathbin{\vcenter{\hbox{\scalebox{#1}{$\bullet$}}}}}
 % \renewcommand{\labelitemi}{$\square$}
-\renewcommand{\labelitemi}{$\sbullet[.75]$}
+% \renewcommand{\labelitemi}{$\sbullet[.75]$}
 % \newcommand{\tabitem}{$\square$~~}
 \newcommand{\tabitem}{$\sbullet[.75]$~~}
 \renewcommand{\arraystretch}{1.25}
@@ -82,9 +82,21 @@
 \vspace{-25pt}
 \noindent
 
+
+\section{Personal Details}
+\begin{tabular}{ll}
+Name: & Kawa Mustafa Aziz Manmi \\
+Gender: & Male \\
+Specialty: & Applied Mathematics \\
+Home address: & Coventry, United Kingdom \\
+mobile: 00447310592048 & \href{mailto:kawamam2007@gmail.com}{\texttt{kawamam2007@gmail.com}} \ \ \ \  \hfill\href{https://www.linkedin.com/in/kawamanmi/}{\texttt{LinkedIn}}
+% \hfill\href{https://github.com/kawaMANMI}{\texttt{GitHub}}}
+\end{tabular}
+
+
 \section{Research interests}
 \begin{p11}
-physics-based battery models, modelling bubble dynamics; boundary integral method, numerical methods; computational fluid dynamics.
+Physics-based battery models, modelling bubble dynamics; boundary integral method, numerical methods; computational fluid dynamics.
 \end{p11}
 
 
@@ -228,7 +240,7 @@ physics-based battery models, modelling bubble dynamics; boundary integral metho
 
 \begin{p1}
 \textbf{Peer-reviewed journal articles}
-\begin{etaremune}
+\begin{enumerate}
     \item \bibentry{AGHA2024117401}
     \item \bibentry{jund2024extended}
     \item \bibentry{bapir2024oscillation}
@@ -243,14 +255,15 @@ physics-based battery models, modelling bubble dynamics; boundary integral metho
     \item \bibentry{wang2014microbubble}
     \item \bibentry{wang2015cell}
     \item \bibentry{saeed2008iterative}
-\end{etaremune}
+\end{enumerate}
 \end{p1}
 
 
 
 \section{Scientific Meeting}
 \begin{p1}
-	\begin{etaremune}
+	\begin{enumerate}
+		\item Early Career Researcher Conference and Training Event, 26-27 March 2024, University of Warwick, UK (Presentation).
 		\item ModVal 2024, the 20th Symposium on Modeling and Validation of Electrochemical Energy Technologies, 13-14 March 2024 in Baden, Switzerland (Poster)
 		\item Faraday Institution Conference, University of Birmingham, Birmingham, UK, 11-13 September 2023.
 		\item PERCAT Postdoctoral Researcher Conference (EPS & LES) University of Birmingham, UK, 26 June 2019 (Poster).
@@ -260,33 +273,33 @@ physics-based battery models, modelling bubble dynamics; boundary integral metho
 		\item The Murfy International Scientific Meeting, Amazing (cavitation) bubbles: great potentials and challenges (nov. 2014), Kavli Royal Society Centre, Buckinghamshire, UK
 		\item Meeting to celebrate the career of Professor John Blake (Sep, 2013) Mathematical challenges in bubbles and biological fluid mechanics School of Mathematics, University of Birmingham, UK.
 		\item 4th annual BEAR PGR Conference on Research Computing (2013) University of Birmingham, UK.
-	\end{etaremune}
+	\end{enumerate}
 	\end{p1}
 
 
 	\section{Invited Talks/Webinars}
 	\begin{p1}
-		\begin{etaremune}
+		\begin{enumerate}
 			\item Salahddin University-Erbil, Iraq, March 2024. Math Meets Batteries: An Overview of Physics-Based Modeling.
 			\item Mathematics Forever Organization, Kurdistan Region, Iraq, Mrach 2024. An Overview of Mathematical Modelling: Fluid Dynamics as an Example
 			
-		\end{etaremune}
+		\end{enumerate}
 	\end{p1}
 
 % \textbf{Peer-reviewed symposium proceedings}
-% \begin{etaremune}
+% \begin{enumerate}
 %     \item \bibentry{Radhakrishnan2021}
 %     \item \bibentry{Font2020a}
-% \end{etaremune}
+% \end{enumerate}
 
 % \textbf{Conference proceedings}
-% \begin{etaremune}
+% \begin{enumerate}
 %     \item \bibentry{Suarez2023a}
 %     \item \bibentry{Font2017}
-% \end{etaremune}
+% \end{enumerate}
 
 % \textbf{Conference abstracts}
-% \begin{etaremune}
+% \begin{enumerate}
 %     \item \bibentry{Cabral2023APS}
 %     \item \bibentry{Alcantara-Avila2023APS}
 %     \item \bibentry{Weymouth2023APS}
@@ -299,10 +312,10 @@ physics-based battery models, modelling bubble dynamics; boundary integral metho
 %     \item \bibentry{Font2019APS}
 %     \item \bibentry{Font2019ETC}
 %     \item \bibentry{Font2016UKFLUIDS}
-% \end{etaremune}
+% \end{enumerate}
 
 % \section{Invited Talks}
-% \begin{etaremune}
+% \begin{enumerate}
 %     \item \bibentry{talk10}
 %     \item \bibentry{talk9}
 %     \item \bibentry{talk8}
@@ -313,7 +326,7 @@ physics-based battery models, modelling bubble dynamics; boundary integral metho
 %     \item \bibentry{talk3}
 %     \item \bibentry{talk2}
 %     \item \bibentry{talk1}
-% \end{etaremune}
+% \end{enumerate}
 % \end{p1}
 
 % \section{Student supervision}\vspace{0.5cm}
@@ -375,13 +388,13 @@ physics-based battery models, modelling bubble dynamics; boundary integral metho
 
 \section{Software Skills}
 \begin{p11}
-\textbf{Programming languages}: :Python, Matlab, Fortran, C#,  JavaScript, Visual Basic, Pascal.\\
+\textbf{Programming languages}: Python, Matlab, Fortran, C\#,  JavaScript, Visual Basic, Pascal.\\
 \textbf{Web Development}: HTML, CSS, Bootstrap, Node.js, Express\\
 \textbf{Databases}: PostgreSQL, MongoDB\\
 \textbf{Microsoft Office}:  Word, Excel (PivotTables, VBA), PowerPoint\\
-\textbf{Modelling Packages}:OpenFOAM, Paraview, HyperMesh, Abaqus\\
+\textbf{Modelling Packages}: OpenFOAM, Paraview, HyperMesh, Abaqus\\
+\textbf{Tools}: Git, \LaTeX,  Paraview.\\
 \vspace{4pt}
-\textbf{Tools}: Git, \LaTeX,  Paraview.
 
 % \vspace{4pt}
 % \textbf{Selection of popular repositories}:
